@@ -1,0 +1,16 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: mall-admin
+  profiles:
+    active: dev
+
+mybatis:
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-pconfig:
+      id-type: auto
+      configuration:
+        auto-mapping-behavior: partial
