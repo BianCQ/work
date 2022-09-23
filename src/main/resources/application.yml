@@ -11,6 +11,7 @@ mybatis:
   mapper-locations: classpath:/mapper/**/*.xml
   global-config:
     db-pconfig:
-      id-type: auto
-      configuration:
-        auto-mapping-behavior: partial
+    id-type: auto
+    configuration:
+    auto-mapping-behavior: partial
+    map-underscre-to-camel-case: true

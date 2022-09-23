@@ -1,4 +1,6 @@
-package com.workspace.tuling01.srevice.impl;
+package com.workspace.tuling01.service.srevice.impl;
+
+import java.util.List;
 
 public interface PmsProductCategoryService extends Iservice<PmsProductCategory> {
 
@@ -12,5 +14,7 @@ public interface PmsProductCategoryService extends Iservice<PmsProductCategory> 
      */
 
     Page list (Long parentId,Integer pageNum, Integer pageSize);
+
+    void updateNavStatus(List<Long>ids, Integer navStatus);
 }
 
