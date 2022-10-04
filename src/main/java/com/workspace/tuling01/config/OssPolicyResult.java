@@ -1,4 +1,4 @@
-package com.workspace.tuling01.dto;
+package com.workspace.tuling01.config;
 
 public class OssPolicyResult {
 

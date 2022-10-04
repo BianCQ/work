@@ -12,9 +12,10 @@ public class OssConfig {
     private String ALIYUN_OSS_ACCESSKEYID;
     @Value("${alivun.oss.accessKeySecret}")
     private String ALIYUN_OSS_ACCESSKETSECRET;
+
     @Bean
-    public OssClient ossClient(){
-        return new OssClient(ALIYUN_OSS_ENDPOINT,ALIYUN_OSS_ACCESSKEYID,
-                ALIYUN_OSS_ACCESSKETSECRET)
+    public OssClient ossClient() {
+        return new OssClient(ALIYUN_OSS_ENDPOINT, ALIYUN_OSS_ACCESSKEYID,
+                ALIYUN_OSS_ACCESSKETSECRET);
     }
 }
