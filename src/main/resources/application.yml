@@ -15,3 +15,10 @@ mybatis:
     configuration:
     auto-mapping-behavior: partial
     map-underscre-to-camel-case: true
+
+redis:
+  database: mall
+  expire:
+    common: 86400 #24小时
+
+

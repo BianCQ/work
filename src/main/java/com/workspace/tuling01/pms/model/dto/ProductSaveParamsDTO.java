@@ -1,5 +1,7 @@
 package com.workspace.tuling01.pms.model.dto;
 
+import java.util.List;
+
 @Data
 @EqualsAndHashCode(callSuper = false)
 @ApiModel(value = "商品保存数据传输对象", description = "用于商品添加，修改保存的参数接受 ")

@@ -1,5 +1,10 @@
 package com.workspace.tuling01.exception;
 
+
+import org.springframework.stereotype.Controller;
+
+@ControllerAdvice
+@Slf4j
 public class GlobalExceptionHandler {
 
     /**
@@ -14,6 +19,17 @@ public class GlobalExceptionHandler {
 
         }
         return CommonResult.failed(e.getMessage());
+    }
+
+    /**
+     * 处理未知异常
+     */
+    @ResponseBody
+    @ExceptionHandler(value = RuntimeException.class)
+    public CommonResult handleRuntimeException (RuntimeException e){
+        log.error("运行时异常：",e);
+
+        return CommonResult.failed(ResultCode.UNKNOWN());
     }
 
 

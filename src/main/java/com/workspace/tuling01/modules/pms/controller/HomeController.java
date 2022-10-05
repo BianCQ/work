@@ -1,4 +1,4 @@
-package com.workspace.tuling01.modules.controller;
+package com.workspace.tuling01.modules.pms.controller;
 
 import com.workspace.tuling01.pms.model.dto.HomeMenusDTO;
 
@@ -7,9 +7,6 @@ import java.util.List;
 /**
  * 首页控制器
  */
-@ResController
-@Api(tags = "HomeController",description="首页内容管理")
-@RequestMappering("/home")
 
 
 public class HomeController {
